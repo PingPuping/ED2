@@ -19,6 +19,8 @@
     <?php 
         include("template/navbar.php"); 
         echo $_GET['pid'];
+        $oeder_all = $_GET['Iv'];
+        print_r($oeder_all);
     ?>
 
     
