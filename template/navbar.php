@@ -15,7 +15,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="dashboard.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
@@ -23,7 +23,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="list_user.php">รายชื่อสมาชิก</a>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,7 +31,7 @@
                                  if(!(isset($_SESSION['ss_user']))){
                                     echo  "Username";
                                  }else{
-                                     echo $_SESSION['ss_user'];
+                                    echo $_SESSION['ss_user'];
                                  }
                                  
                             
@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">ดูโปรไฟล์</a></li>
                             <li><a class="dropdown-item" href="#">ประวัติการยืม</a></li>
-                            <li><a class="dropdown-item" href="https://www.ec-mall.com/" target="blank">หากอยากเป็นเจ้าของ</a></li>
+
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item text-danger" href="php/logout.php" >
                                 <?php  

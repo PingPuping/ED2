@@ -1,7 +1,11 @@
 <?php 
 
     session_start();
-    require_once("php/dbconnector.php"); 
+    require_once("php/dbconnector.php");
+
+    // รับค่าPk
+    $_GET['pid']; //แบบยืมชื้นเดียว
+    $order_all = $_GET['Iv']; //แบบยืมหลายชิ้น
 
 ?>
 <!DOCTYPE html>
@@ -19,8 +23,6 @@
     <?php 
         include("template/navbar.php"); 
         echo $_GET['pid'];
-        $oeder_all = $_GET['Iv'];
-        print_r($oeder_all);
     ?>
 
     

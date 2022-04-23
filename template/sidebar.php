@@ -1,23 +1,16 @@
-<h6 class="text-center pt-3">ประเภทอุปกรณ์</h6>
-<hr>
-<ul class="list-group list-group-flush pt-0">
-    <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Camera
-    </li>
-    <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Microphone
-    </li>
-    <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Light
-    </li>
-    <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Screen
-    </li>
-    <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Tablet
-    </li>
-    <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Television
-    </li>
-
-</ul>
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
+     <div class="list-group list-group-flush  mt-4 ">
+        <a href="index.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
+            <i data-feather="home"class="me-3"></i><span>Home</span>
+        </a>
+        <a href="dashboard_new.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
+            <i data-feather="pie-chart"class="me-3"></i><span>Dashboard</span>
+        </a>
+        <a href="list_tool.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
+            <i data-feather="monitor"class="me-3"></i><span>List tool</span>
+        </a>
+        <a href="list_user.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
+            <i data-feather="book"class="me-3"></i><span>List user</span>
+        </a>
+    </div>
+</nav> 

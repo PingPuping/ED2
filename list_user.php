@@ -14,12 +14,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/colors_bt5.css">
     <link rel="stylesheet" href="css/sta.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <div class="fixed-top">
+    <div class="sticky-top">
         <?php include("template/navbar.php");?>
     </div>
-    <div class="container pt-5">
+    <div class="row">
+        <div class="col-2">
+        <?php include("template/sidebar.php");?>
+        </div>
+        <div class="col-10">
         <div class="mt-4">
             <h1>List user</h1>
         </div>
@@ -61,8 +66,14 @@
                 ?>
             </tbody>
         </table>
+ 
+        </div>
     </div>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/color_status.js"></script>
+    <script>
+      feather.replace()
+    </script>
 </body>
 </html>
 
