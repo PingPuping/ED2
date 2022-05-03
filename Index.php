@@ -52,9 +52,9 @@
                             <div class="row mb-3">
 
                                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-                                    <div class="card shadow" style="width: 22rem;">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="photo/rp.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                    <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                        <div class="d-flex justify-content-center p-4">
+                                            <img src="photo/rp.jpg" class="card-img-top p-1" alt="..." ">
                                         </div>
                                         <div class="card-body d-flex flex-column justify-content-center">
                                             <!-- Product data -->
@@ -83,9 +83,9 @@
                                 </div>
 
                                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-                                    <div class="card shadow" style="width: 22rem;">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="photo/d7500.jpg" class="card-img-top p-1" alt="..."  style="width: 20rem;">
+                                    <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                        <div class="d-flex justify-content-center p-4">
+                                            <img src="photo/d7500.jpg" class="card-img-top p-1" alt="..." ">
                                         </div>
                                         <div class="card-body d-flex flex-column justify-content-center">
                                             <!-- Product data -->
@@ -105,9 +105,9 @@
                                 </div>
 
                                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-                                    <div class="card shadow" style="width: 22rem;">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="photo/200d.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                    <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                        <div class="d-flex justify-content-center p-4">
+                                            <img src="photo/200d.jpg" class="card-img-top p-1" alt="..." ">
                                         </div>
                                         <div class="card-body d-flex flex-column justify-content-center">
                                             <!-- Product data -->
@@ -128,9 +128,9 @@
 
 
                                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-                                    <div class="card shadow" style="width: 22rem;">
-                                        <div class="d-flex justify-content-center">
-                                            <img src="photo/lumixg7.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                    <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                        <div class="d-flex justify-content-center p-4">
+                                            <img src="photo/lumixg7.jpg" class="card-img-top p-1" alt="...">
                                         </div>
                                         <div class="card-body d-flex flex-column justify-content-center">
                                             <!-- Product data -->
@@ -160,9 +160,9 @@
                         <!-- microphone row 1 -->
                         <div class="row mb-3">
                         <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                            <div class="card shadow" style="width: 22rem;">
-                                <div class="d-flex justify-content-center">
-                                    <img src="photo/saramic.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                            <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                <div class="d-flex justify-content-center p-4">
+                                    <img src="photo/saramic.jpg" class="card-img-top p-1" alt="...">
                                 </div>
                                 <div class="card-body d-flex flex-column justify-content-center">
                                     <h6 class="card-title">Saramonic</h6>
@@ -181,9 +181,9 @@
                         </div>
                         
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                <div class="d-flex justify-content-center">
-                                    <img src="photo/sonymic.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                <div class="d-flex justify-content-center p-4">
+                                    <img src="photo/sonymic.jpg" class="card-img-top p-1" alt="...">
                                 </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Sony</h6>
@@ -202,9 +202,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/deitymic.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/deitymic.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Deity</h6>
@@ -223,9 +223,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/saramic2.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/saramic2.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                    
                                     <div class="card-body d-flex flex-column justify-content-center">
@@ -255,9 +255,9 @@
                         <!-- tripod row 1 -->
                         <div class="row mb-3">
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/trip1.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/trip1.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Miliboo</h6>
@@ -276,9 +276,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/trip2.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/trip2.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Manfrotto</h6>
@@ -297,9 +297,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/trip3.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/trip3.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Miliboo</h6>
@@ -318,9 +318,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/trip4.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/trip4.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Peak Design</h6>
@@ -349,9 +349,9 @@
                         <!-- ligh row 1 -->
                         <div class="row mb-3">
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/godox.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/godox.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Godox</h6>
@@ -370,9 +370,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/canonli.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/canonli.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                    
                                     <div class="card-body d-flex flex-column justify-content-center">
@@ -392,9 +392,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                       <img src="photo/nanlux.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;"> 
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                       <img src="photo/nanlux.jpg" class="card-img-top p-1" alt="..."> 
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Nanlux</h6>
@@ -413,9 +413,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/apli.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/apli.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">Aputure</h6>
@@ -444,9 +444,9 @@
                         <!-- screen row 1 -->
                         <div class="row mb-3">
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/gs.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;">
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/gs.jpg" class="card-img-top p-1" alt="...">
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">No Brand</h6>
@@ -465,9 +465,9 @@
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-12 col-sm-12 d-flex justify-content-center">
-                                <div class="card shadow" style="width: 22rem;">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="photo/ws.jpg" class="card-img-top p-1" alt="..." style="width: 20rem;"> 
+                                <div class="card shadow" style="width: 22rem; border-radius: 25px;">
+                                    <div class="d-flex justify-content-center p-4">
+                                        <img src="photo/ws.jpg" class="card-img-top p-1" alt="..."> 
                                     </div>
                                     <div class="card-body d-flex flex-column justify-content-center">
                                         <h6 class="card-title">No Brand</h6>
@@ -499,11 +499,11 @@
                     <!-- Confirm -->
                     <div class="row  mb-5 ms-1 fixed-bottom " id="confrow">
                         <div class="col-2">
-                            <div class="card">
+                            <div class="card shadow" style="border-radius: 15px;">
                                 <div class="card-body ">
                                     <div class="d-flex justify-content-center">
                                         <button type="submit" class="btn bd-purple-500 btn-lg me-3" >เลือกสร็จสิ้น</button>
-                                        <input type="reset" class="btn btn-danger btn-lg" name="" id="">
+                                        <button type="reset" class="btn btn-outline-danger " >ยกเลิก</button>
                                     </div>
 
                                 </div>

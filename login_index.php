@@ -39,7 +39,7 @@
                                             <div class="d-flex flex-column justify-content-center px-5">
                                                 <button type="submit" class="btn bd-purple-500 btn-lg shadow" style="border-radius: 10px;">เข้าสู่ระบบ</button>
                                                 <a href="regis.php" class="text-center mt-1">หากยังไม่ได้ลงทะเบียน</a>
-                                                <a href="regis.php" class="text-center mt-1">หากลืมรหัสผ่าน</a>
+                                                <a href="person_ac.php" class="text-center mt-1">หากลืมรหัสผ่าน</a>
                                             </div>
                                         </form> 
                                     </div>

@@ -20,7 +20,29 @@
                 <?php include("template/sidebar.php");?>
             </div>
             <div class="col-10">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-title">
+                                <div>
+                                    <h4>User</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="text-center">สมาชิกทั้งหมด <?php echo 100 ; ?> คน</h5>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="card me-23">
+                                            <p>นิสิตทั้งหมด <?php echo 90; ?></p>
+                                        </div>
+                                        <div class="card">
+                                            <p>อาจารย์ทั้งหมด <?php echo 10; ?></p>
+                                        </div>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

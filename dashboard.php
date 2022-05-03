@@ -236,6 +236,7 @@
                         <div class="card-title">
                             <h6 class="text-center">จำนวนไมค์โครโฟนทั้งหมด</h6>
                         </div>
+                        <!--  -->
                         <div class="card-body">
                             <h3 class="card-text text-center"> <b><?php echo $total_mic; ?> ตัว</b></h3>
                         </div>

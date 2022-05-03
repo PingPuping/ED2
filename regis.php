@@ -41,12 +41,12 @@
                                         </div>
                                         <div class="col-lg-5 col-md-5 col-sm-12">
                                             <label for="name" class="form-label">ชื่อ : </label>
-                                            <input type="text" class="form-control mb-3" name="name" id="name" value="Puping" placeholder="ใส่ชื่อของคุณ" require style="border-radius: 10px;">
+                                            <input type="text" class="form-control mb-3" name="name" id="name"  placeholder="ใส่ชื่อของคุณ" require style="border-radius: 10px;">
                                             
                                         </div>
                                         <div class="col-lg-5 col-md-5 col-sm-12">
                                             <label for="lastname" class="form-label">นามสกุล : </label>
-                                            <input type="text" class="form-control mb-3" name="lastname" id="name" value="Kamseang" placeholder="ใส่นามสกุลของคุณ" require style="border-radius: 10px;">
+                                            <input type="text" class="form-control mb-3" name="lastname" id="name"  placeholder="ใส่นามสกุลของคุณ" require style="border-radius: 10px;">
                                         </div>
                                     </div>
                                     <!-- Seelect สาขาวิชาเอก -->
@@ -91,7 +91,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <label for="home_tel" class="form-label">เบอร์โทรศัพท์บ้าน (ถ้ามี) :</label>
-                                            <input type="text" class="form-control mb-3" name="home_tel" id="home_tel" placeholder="เบอร์โทรศัพท์บ้าน" style="border-radius: 10px;">
+                                            <input type="text" class="form-control mb-3" name="home_tel" id="home_tel" placeholder="เบอร์โทรศัพท์บ้าน" style="border-radius: 10px;" require>
                                             
                                         </div>
                                     </div>
@@ -100,17 +100,17 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-sm-12">
                                             <label for="gmail" class="form-label">G-mail :</label>
-                                            <input type="email" class="form-control mb-3" name="gmail" id="gmail" placeholder="" value="PupingNa11@gmail.com" require style="border-radius: 10px;">
+                                            <input type="email" class="form-control mb-3" name="gmail" id="gmail" placeholder="" value="@gmail.com" require style="border-radius: 10px;">
                                             
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-12">
                                             <label for="gafe_mail" class="form-label">Gafe-mail :</label>
-                                            <input type="email" class="form-control mb-3" name="gafe_mail" id="gafe_mail" placeholder="เบอร์โทรศัพท์มือถือ" value="puping.kamseang@g.swu.ac.th" require style="border-radius: 10px;">
+                                            <input type="email" class="form-control mb-3" name="gafe_mail" id="gafe_mail" placeholder="เบอร์โทรศัพท์มือถือ" value="@g.swu.ac.th" require style="border-radius: 10px;">
                                             
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-sm-12">
                                             <label for="line_id" class="form-label">Line ID :</label>
-                                            <input type="text" class="form-control mb-3" name="line_id" id="line_id" value="pingoc18" placeholder="Line ID" style="border-radius: 10px;">
+                                            <input type="text" class="form-control mb-3" name="line_id" id="line_id "placeholder="Line ID" style="border-radius: 10px;">
                                             
                                         </div>
                                     </div>
@@ -126,11 +126,11 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <label for="province" class="form-label">จังหวัด :</label>
-                                        <input type="text" class="form-control mb-3" name="province" id="province" placeholder="จังหวัดที่อยู่" value="BKK" style="border-radius: 10px;">
+                                        <input type="text" class="form-control mb-3" name="province" id="province" placeholder="จังหวัดที่อยู่"  style="border-radius: 10px;">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <label for="zip_code" class="form-label">รหัสไปรษณีย์ :</label>
-                                        <input type="text" class="form-control mb-3" name="zip_code" id="zip_code" placeholder="รหัสไปรษณีย์" value="10900" style="border-radius: 10px;">
+                                        <input type="text" class="form-control mb-3" name="zip_code" id="zip_code" placeholder="รหัสไปรษณีย์"  style="border-radius: 10px;">
                                     </div>
                                 </div>
                                  <hr>
@@ -139,7 +139,7 @@
                                  <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <label for="q_1" class="form-label">วิชาเอกที่ 1 ที่คุณชอบเรียนมากทีสุด :</label>
-                                        <input type="text" class="form-control mb-3" placeholder="รหัสวิชา เข่น EDT324" id="q_1" require style="border-radius: 10px;">
+                                        <input type="text" class="form-control mb-3" placeholder="รหัสวิชา เข่น EDT324" id="q_1" name="q_1" require style="border-radius: 10px;">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12">
                                         <label for="q_2" class="form-label">วิชาเอกที่ 2 ที่คุณชอบเรียนมากทีสุด :</label>

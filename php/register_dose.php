@@ -37,34 +37,79 @@
     <section class="bg-light">
         <div class="container">
             <?php
+                // เช็ครหัสตั้งกับรหัสยืนยันตรงกันมั้ย
                 if($_POST['pw_login']==$_POST['nd_pw_login']){ 
             ?>
                 <!-- Check ว่าเคยมาลงทะเบียนหรือยัง -->
                 <?php 
+                    
                     $result_check_regis ="SELECT * FROM `user` WHERE user.id_login = '$id_login'";
                     $check_regis = mysqli_query($condb,$result_check_regis);
                     $row_check_regis = mysqli_num_rows($check_regis);
                 ?>
                 <!-- เข้าเงื่อนไขและนำข้อมูลลงDatabase -->
-                <?php if($row_check_regis>=1){ ?>
-                <!-- เตือนว่่าเคยลงทะเบยนไปแล้ว -->
-                    <div class=" row d-flex justify-content-center align-item-center">
-                        <div class="alert alert-danger" role="alert">
-                            <h4 class="alert-heading">ท่านเคยลงทะเบียนไปแล้ว</h4>
-                            <p>ท่านเคยลงทะเบียนไปแล้ว โปรดไปยังหน้าเข้าสู่ระบบ</p>
-                            <hr>
-                            <a class="btn btn-light" href="../login_index.php">ไปยังหน้าเข้าสู่ระบบ</a>
-                        </div>
-                    </div>
+                <?php 
+                if($row_check_regis>=1){ 
+                    ?><script type="text/javascript"> window.alert("ท่านเคยลงทะเบียนไปแล้ว กรุณาลองเข้าสู่ระบบอีกครั้ง");</script><?php
+                    ?><script type="text/javascript"> window.location = '../login_index.php'; </script><?php
 
-                <?php }else{ ?>
-                <!-- นำคนมาลงทะเบียน -->
+                }else{ 
+                    $sql_register = "INSERT INTO `user`(
+                        `type_user`,
+                        `name_prefix`,
+                        `name`,
+                        `lastname`,
+                        `stmajor`,
+                        `ndmajor`,
+                        `tel`,
+                        `home_tel`,
+                        `gmail`,
+                        `gafe_mail`,
+                        `line_id`,
+                        `address`,
+                        `province`,
+                        `zip_code`,
+                        `id_login`,
+                        `pw_login`,
+                        `q_1`,
+                        `q_2`
+                    )VALUES(
+                        '$type_user',     
+                        '$name_prefix',
+                        '$name',
+                        '$lastname',
+                        '$stmajor',
+                        '$ndmajor',
+                        '$tel',
+                        '$home_tel',
+                        '$gmail',
+                        '$gafe_mail',
+                        '$line_id',
+                        '$address',
+                        '$province',
+                        '$zip_code',
+                        '$id_login',
+                        '$pw_login',
+                        '$q_1',
+                        '$q_2'
+                    )";
+                    
+                    $result_register = mysqli_query($condb,$sql_register);
 
-                <!-- เตือนว่าลงทะเบียนเรียบร้อย -->
-                <?php }?>
+                    if($result_register){
+                        ?><script type="text/javascript"> window.alert("ลงทะเบียนสำเร็จ กรุณาเข้าสู่ระบบอีกครั้ง");</script><?php 
+                        header('location: ../login_index.php');
+                        
+                    }else{
+                        ?><script type="text/javascript"> window.alert("ลงทะเบียนไม่สำเร็จ ผิดพลาด!");</script><?php
+                        header('location: ../regis.php');
+                    }
+
+                
+                }?>
             <?php
                 }else{
-                    header('location: ../regis_new.php'); 
+                    header('location: ../regis.php'); 
                 }
             ?>
         </div>

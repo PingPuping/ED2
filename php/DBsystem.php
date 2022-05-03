@@ -15,11 +15,12 @@
             echo "Something wrong in Update!";
         }
 
+
     }elseif($_GET['act']=='delete'){
-           // Delete
+        
+        // ลบผู้ใช้งาน
         $uid = $_GET['uid'];
-        echo $_GET['type'];
-        $delete_user = "DELETE FROM `user` WHERE user.id ='$uid'";
+        $delete_user = "DELETE FROM `user` WHERE user.id_login ='$uid'";
         $resultdelete = mysqli_query($condb,$delete_user);
 
         if($resultdelete){
@@ -28,6 +29,8 @@
             echo "Something wrong in Delete!";
         }
         
+    }elseif($_GET['act']=='change_pw'){
+
     }
 
 
