@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+    
     require_once("dbconnector.php");
 
     // ค้าที่รับมาจากฟอร์ม
@@ -18,10 +18,13 @@
 
     // เช็คว่าดึงออกมาได้แุุุถวเดียวใช่มั้ย
     if($result_row==1){
+        session_start();
         // ถ้าได้แถวเดียวให้ดึงข้อมูลออกมาเป้น object
         $data = mysqli_fetch_object($result_login);
         $_SESSION['ss_user'] = $data->name;
-        
+        $_SESSION['ss_lname'] = $data->lastname;
+        $_SESSION['ss_stmajor'] = $data->stmajor;
+        $_SESSION['ss_ndmajor'] = $data->ndmajor;
         // และไปที่หน้า Index
         ?><script type="text/javascript"> window.location = '../index.php'; </script><?php
     }else{

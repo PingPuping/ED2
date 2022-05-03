@@ -3,8 +3,8 @@
     require_once("php/dbconnector.php");
 
     $return_date = $_POST['return_date'];
-    $single_order = $_POST['single_order'];
-    $multi_order = $_POST['multi_order'];
+    $single_order = $_SESSION['single_order'];
+    $multi_order = $_SESSION['multi_order'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,62 +26,93 @@
             <div class="col-lg-12 col-md-10">
 
                 <div class="card shadow" style="border-radius: 20px;">
-                    
-                    <div class="card-body p-3">
+                    <div class="card-body p-4">
+                        
+                        <!-- Header -->
                         <h1 class="card-title text-center">สรุปรายการ</h1>
-                        <?php
-                            echo $return_date."<br>";
-                            print_r($multi_order);
-                            echo $single_order;
-                        ?>
-                    </div>
+                        <hr>
+                        <!-- แสดงข้อมูลผู้ยืม -->
+                        <div class="row d-flex">
+                            <div class="col-12 ">
+                                <p>ชื่อ : <?php echo $_SESSION['ss_user']; ?></p>
+                                <p>นามสกุล : <?php echo $_SESSION['ss_lname']; ?></p>
+                                <p>เอกที่ 1 : <?php echo $_SESSION['ss_stmajor']; ?></p>
+                                <p>เอกที่ 2 : <?php echo $_SESSION['ss_ndmajor']; ?></p> 
+                            </div>
 
-                    <div class="row">
-                        <table class="table"> 
-                            <thead>
-                                <th>รหัสอุปกรณ์</th>
-                                <th>ยีห้อ</th>
-                                <th>รุ่น</th>
-                            </thead>
-                            <tbody>
-                            <?php
-                                // ดึงข้อมูล order ที่ user เลือกมาแสดงให้เห็นก่อน                                        
-                                if(isset($multi_order)){ //ุ                                            
-                                // กรณีเลือกหลายรายการ
-                                    for($i=0;$i<=count($multi_order)-1;$i++){
-                                        $sql_show_order="SELECT tool.pID, tool.brand, tool.model FROM `tool` WHERE pID='$multi_order[$i]'";
-                                        $result_show_order = mysqli_query($condb,$sql_show_order);
-                                        $data_order = mysqli_fetch_array($result_show_order);  
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- ตารางสรุปรายการยืม -->
+                                <table  class="table">
+                                    <thead>
+                                            <th>รหัสอุปกรณ์</th>
+                                            <th>ยีห้อ</th>
+                                            <th>รุ่น</th>
+                                    </thead>    
+                                    <tbody>  
+                                        <?php
+                                            // ดึงข้อมูล order ที่ user เลือกมาแสดงให้เห็นก่อน                                        
+                                            if(isset($multi_order)){ //ุ                                            
+                                            // กรณีเลือกหลายรายการ
+                                            for($i=0;$i<=count($multi_order)-1;$i++){
+                                                $sql_show_order="SELECT tool.pID, tool.brand, tool.model FROM `tool` WHERE pID='$multi_order[$i]'";
+                                                $result_show_order = mysqli_query($condb,$sql_show_order);
+                                                $data_order = mysqli_fetch_array($result_show_order);  
 
-                                    ?>
-                                    <tr>
-                                        <td><?php echo$data_order['pID']; ?></td>
-                                        <td><?php echo$data_order['brand']; ?></td>
-                                        <td><?php echo$data_order['model']; ?></td>
-                                    </tr>
-                                    <?php 
-                                        } }else{ 
-                                        $sql_show_order="SELECT tool.pID, tool.brand, tool.model FROM `tool` WHERE pID='$single_order'";
-                                        $result_show_order = mysqli_query($condb,$sql_show_order);
-                                        $data_order = mysqli_fetch_array($result_show_order); 
-                                    ?>
-                                    <tr>
-                                        <td><?php echo$data_order['pID']; ?></td>
-                                        <td><?php echo$data_order['brand']; ?></td>
-                                        <td><?php echo$data_order['model']; ?></td>
-                                    </tr>
-                                    <?php
-                                        }
-                                    ?>
-                            </tbody>    
-                        </table>
+                                        ?>
+                                        <tr>
+                                            <td><?php echo$data_order['pID']; ?></td>
+                                            <td><?php echo$data_order['brand']; ?></td>
+                                            <td><?php echo$data_order['model']; ?></td>
+                                        </tr>
+                                        <?php 
+                                            } }else{ 
+                                            $sql_show_order="SELECT tool.pID, tool.brand, tool.model FROM `tool` WHERE pID='$single_order'";
+                                            $result_show_order = mysqli_query($condb,$sql_show_order);
+                                            $data_order = mysqli_fetch_array($result_show_order); 
+                                        ?>
+                                        <tr>
+                                            <td><?php echo$data_order['pID']; ?></td>
+                                            <td><?php echo$data_order['brand']; ?></td>
+                                            <td><?php echo$data_order['model']; ?></td>
+                                        </tr>
+                                        <?php
+                                            }
+                                        ?>
+                                    </tbody>  
+                                    
+                                </table>
+
+                                <h4>จำนวนอุปกรณ์ที่ยืมทั้งหมด :    
+                                <?php 
+                                    if(isset($i)){
+                                        echo $i;
+                                    }else{
+                                        echo 1;
+                                    }
+                                ?> ชิ้น</h4>
+
+                                
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <h4 class="text-danger">กำหนดคืนอุปกรณ์ทั้งหมดในวันที่ <?php echo $return_date; ?></h4>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5 class="text-danger">**กรุณาถ่ายภาพ หรือบันทึกหน้าจอนี้ไว้</h5>
+                        </div>
                     </div>
                 </div>
-
-
+                <div class="d-flex justify-content-center mt-4">
+                    <a href="Index.php" class="btn btn-danger btn-lg">กลับสู่หน้าหลัก</a>
+                </div>
             </div>
         </div>
-
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/color_status.js"></script>

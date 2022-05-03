@@ -16,6 +16,7 @@
     $row_cps = mysqli_num_rows($result_check_person);
 
     if($row_cps==1){
+        
         header('location: ../change_pw.php');
         
         session_start();

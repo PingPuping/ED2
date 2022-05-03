@@ -6,9 +6,11 @@
     error_reporting(E_ERROR | E_PARSE);
 
     // รับ Primary Key ของอุปกรณ์
-    $single_order = $_GET['pid']; //แบบยืมชื้นเดียว
-    $multi_order = $_GET['Iv']; //แบบยืมหลายชิ้น
+    $_SESSION['single_order'] = $_GET['pid']; //แบบยืมชื้นเดียว
+    $_SESSION['multi_order'] = $_GET['Iv']; //แบบยืมหลายชิ้น
 
+    $single_order = $_SESSION['single_order'];
+    $multi_order = $_SESSION['multi_order'];
 
 
 ?>
