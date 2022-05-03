@@ -4,6 +4,10 @@
     $sqltool = "SELECT * FROM tool
     INNER JOIN type_status ON tool.statusp = type_status.statusID";
     $resulttool = mysqli_query($condb,$sqltool);
+
+    if($_SESSION['role']!=1){
+        ?><script type="text/javascript"> window.location = 'index.php'; </script><?php
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

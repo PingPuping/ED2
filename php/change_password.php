@@ -16,7 +16,7 @@
 
         // เช็คว่าการเปลี่ยนรหัสทำสำเร็จหรือไม่
         if($result_change_pw){
-
+            
             header("location: ../login_index.php");
             // ถ้าทำเสร็จให้ทำลายเซสชั่นก่อน
             session_destroy();

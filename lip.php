@@ -9,7 +9,6 @@
     $date = date_default_timezone_set("Asia/Bangkok");
     $dateGet = date('y/m/d');
     $uid = $_SESSION['id_login'];
-    $newstatus = "2";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,9 +73,6 @@
                                           $datamas = mysqli_fetch_assoc($result_checkmas);
                                           ?>
                                           <?php
-                                          $updatestat = "UPDATE `tool` SET `statusp`= '$newstatus' WHERE tool.pID = '$ToolID'";
-                                          $resupdate = mysqli_query($condb,$updatestat); ?>
-                                          <?php
                                           if ($datamas['total'] == 1) {
 
 
@@ -114,9 +110,6 @@
                                           $result_checkmas = mysqli_query($condb,$sql_checkmas);
                                           $datamas = mysqli_fetch_assoc($result_checkmas);
                                           ?>
-                                          <?php
-                                          $updatestat = "UPDATE `tool` SET `statusp`= '$newstatus' WHERE tool.pID = '$ToolID'";
-                                          $resupdate = mysqli_query($condb,$updatestat); ?>
                                           <?php
                                           if ($datamas['total'] == 1) {
 

@@ -43,7 +43,7 @@
             <div class="col-10">
                 <h5 class="mt-4">รายการอุปกรณ์</h5>
                 <hr>
-                <form action="order.php"  target="_blank" method="GET">
+                <form action="order.php"     method="GET">
                     <!-- CAMERA Row -->
                     <p>Camera</p>
                     <hr>
@@ -77,7 +77,7 @@
                                                     <b>เลือก</b>
                                                 </label>
                                             </div>
-                                            <a href="order.php?pid=<?php echo $stasus_all[0][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                            <a href="order.php?pid=<?php echo $stasus_all[0][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                                                     <b>เลือก</b>
                                                 </label>
                                             </div>
-                                            <a href="order.php?pid=<?php echo $stasus_all[2][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                            <a href="order.php?pid=<?php echo $stasus_all[2][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                                     <b>เลือก</b>
                                                 </label>
                                             </div>
-                                            <a href="order.php?pid=<?php echo $stasus_all[3][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                            <a href="order.php?pid=<?php echo $stasus_all[3][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
                                                     <b>เลือก</b>
                                                 </label>
                                             </div>
-                                            <a href="order.php?pid=<?php echo $stasus_all[4][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                            <a href="order.php?pid=<?php echo $stasus_all[4][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@
                                             <b>เลือก</b>
                                         </label>
                                     </div>
-                                    <a href="order.php?pid=<?php echo $stasus_all[5][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                    <a href="order.php?pid=<?php echo $stasus_all[5][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[6][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[6][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[7][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[7][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[8][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[8][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +270,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[9][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[9][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[10][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[10][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -312,7 +312,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[11][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[11][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -333,7 +333,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[12][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[12][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[13][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[13][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -386,7 +386,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[14][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[14][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +407,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[15][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[15][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +428,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[16][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[16][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -459,7 +459,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[17][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[17][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>
@@ -480,7 +480,7 @@
                                                 <b>เลือก</b>
                                             </label>
                                         </div>
-                                        <a href="order.php?pid=<?php echo $stasus_all[18][0]; ?>" class="btn bd-purple-500" target="_blank">ยืมเลย</a>
+                                        <a href="order.php?pid=<?php echo $stasus_all[18][0]; ?>" class="btn bd-purple-500"   >ยืมเลย</a>
                                     </div>
                                 </div>
                             </div>

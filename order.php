@@ -12,7 +12,12 @@
     $single_order = $_SESSION['single_order'];
     $multi_order = $_SESSION['multi_order'];
 
+    // เช็คล็อคอิน
+    if(!(isset($_SESSION['role']))){
+        ?><script type="text/javascript"> window.location = 'index.php'; </script><?php
+    }
 
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,10 +86,6 @@
 
                             </div>
                             <form action="slip.php" method="POST">
-                                <!-- ส่งค่า pk ใน order รายการเดียว -->
-                                <input type="hidden" value="<?php echo $single_order; ?>" name="single_order" id=""> 
-                                <!-- ส่งค่า pk ใน order หลายรายการ -->
-                                <input type="hidden" value="<?php print_r($multi_order); ?>" name="multi_order" id="">
                                 <!-- เลือกวันที่คืนของ -->
                                 <label for="" class="form-label">กรุณาเลือกวันคืนอุปกรณ์ : <input type="date" class="form-control mb-2" name="return_date" id="return_date"></label><br>
                                 <button type="submit" class="btn btn-lg bd-purple-500 me-3" >ยืนยันการยืม</button>

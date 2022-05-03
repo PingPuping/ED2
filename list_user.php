@@ -3,6 +3,10 @@
     session_start();
     $sqluser = "SELECT * FROM user";
     $resultuser = mysqli_query($condb,$sqluser);
+
+    if($_SESSION['role']!=1){
+        ?><script type="text/javascript"> window.location = 'index.php'; </script><?php
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">

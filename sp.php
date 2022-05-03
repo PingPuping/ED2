@@ -2,6 +2,7 @@
     session_start();
     require_once("php/dbconnector.php");
 
+    error_reporting(E_ERROR | E_PARSE);
     $return_date = $_POST['return_date'];
     $single_order = $_SESSION['single_order'];
     $multi_order = $_SESSION['multi_order'];
@@ -9,7 +10,6 @@
     $date = date_default_timezone_set("Asia/Bangkok");
     $dateGet = date('y/m/d');
     $uid = $_SESSION['id_login'];
-    $newstatus = "2";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,9 +74,6 @@
                                           $datamas = mysqli_fetch_assoc($result_checkmas);
                                           ?>
                                           <?php
-                                          $updatestat = "UPDATE `tool` SET `statusp`= '$newstatus' WHERE tool.pID = '$ToolID'";
-                                          $resupdate = mysqli_query($condb,$updatestat); ?>
-                                          <?php
                                           if ($datamas['total'] == 1) {
 
 
@@ -109,31 +106,6 @@
                                             $data_order = mysqli_fetch_array($result_show_order);
                                             $ToolID = $data_order['pID']
                                         ?>
-                                        <?php
-                                          $sql_checkmas = "SELECT COUNT(UserID)AND(ReturnDate) AS total FROM his_master WHERE UserID = '$uid' AND GetDate = '$dateGet'; ";
-                                          $result_checkmas = mysqli_query($condb,$sql_checkmas);
-                                          $datamas = mysqli_fetch_assoc($result_checkmas);
-                                          ?>
-                                          <?php
-                                          $updatestat = "UPDATE `tool` SET `statusp`= '$newstatus' WHERE tool.pID = '$ToolID'";
-                                          $resupdate = mysqli_query($condb,$updatestat); ?>
-                                          <?php
-                                          if ($datamas['total'] == 1) {
-
-
-                                          }
-                                          else {
-                                            $mas = "INSERT INTO his_master (	MasID , UserID , GetDate , ReturnDate , Status ) VALUES (NULL , '$uid' , '$dateGet', '$return_date' , 'ยังไม่คืน')";
-                                            $result_mas = mysqli_query($condb, $mas);
-
-                                          }
-                                           ?>
-                                        <?php
-                                        $maid = "SELECT * FROM `his_master` WHERE UserID = '$uid' AND GetDate = '$dateGet'";
-                                        $remaid = mysqli_query($condb, $maid);
-                                        $datamaid = mysqli_fetch_assoc($remaid);
-                                        $masid = $datamaid['MasID']
-                                         ?>
                                         <?php
                                           $det = "INSERT INTO his_details (	DetailID , MasID , UserID , ToolID , GetDate , ReturnDate , Status ) VALUES (NULL , '$masid' , '$uid' , '$ToolID' , '$dateGet' , '$return_date' , 'ยังไม่คืน')";
                                           mysqli_query($condb, $det);
