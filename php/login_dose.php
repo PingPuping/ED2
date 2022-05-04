@@ -5,7 +5,7 @@
 
     // ค้าที่รับมาจากฟอร์ม
     $user_id = mysqli_real_escape_string($condb,$_POST['id_login']);
-    $user_password = ($_POST['pw_login']);
+    $user_password = sha1(trim(base64_encode($_POST['pw_login'])));;
 
     // เอามาเรียกข้อมูลจาก Database
     $login = "SELECT * FROM user WHERE user.id_login = '$user_id' AND user.pw_login = '$user_password'";

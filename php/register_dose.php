@@ -19,7 +19,7 @@
     $q_1 = $_POST['q_1'];
     $q_2 = $_POST['q_2'];
     $id_login = $_POST['id_login'];
-    $pw_login = $_POST['pw_login'];
+    $pw_login = sha1(trim(base64_encode($_POST['pw_login'])));
     $nd_pw_login = $_POST['nd_pw_login'];
 
 ?>

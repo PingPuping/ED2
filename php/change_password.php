@@ -4,8 +4,8 @@
     session_start();
 
     $user_id = $_SESSION['uid'];
-    $new_pw = $_POST['new_pw'];
-    $conf_new_pw = $_POST['conf_new_pw'];
+    $new_pw =  sha1(trim(base64_encode($_POST['new_pw'])));//$_POST['new_pw'];
+    $conf_new_pw = sha1(trim(base64_encode($_POST['conf_new_pw'])));//$_POST['conf_new_pw'];
 
     // ถ้ารหัสคอนเฟิร์ม กับรหัส
     if($new_pw == $conf_new_pw){
