@@ -4,7 +4,7 @@
             <i data-feather="home"class="me-3"></i><span>Home</span>
         </a>
         <?php if($_SESSION['role']==1){ ?>
-            <a href="dashboard_new.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
+            <a href="dashboard_again.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
                 <i data-feather="pie-chart"class="me-3"></i><span>Dashboard</span>
             </a>
             <a href="list_tool.php" class="list-group-item list-group-item-action py-3 ripple shadow-sm">
